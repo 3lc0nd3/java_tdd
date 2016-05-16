@@ -23,7 +23,7 @@ public class Fraccion {
         if(denominador < 0){
             throw new IllegalArgumentException("Negativo");
         }
-        int mcd = MinimoCD.mcd(numerador, denominador);
+        int mcd = MaximoCD.mcd(numerador, denominador);
         this.numerador = numerador / mcd;
         this.denominador = denominador / mcd;
     }

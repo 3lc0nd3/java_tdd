@@ -9,7 +9,7 @@ package co.com.elramireza.meetup.ejercicios;
  * Time: 03:08 PM
  * To change this template use File | Settings | File Templates.
  */
-public class MinimoCD {
+public class MaximoCD {
 
     public static int mcd(int a, int b){
         if (b == 0){

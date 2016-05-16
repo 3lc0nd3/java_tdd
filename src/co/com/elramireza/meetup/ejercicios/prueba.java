@@ -1,6 +1,6 @@
 package co.com.elramireza.meetup.ejercicios;
 
-import static co.com.elramireza.meetup.ejercicios.MinimoCD.mcm;
+import static co.com.elramireza.meetup.ejercicios.MaximoCD.mcm;
 
 /**
  * Created with Edward L. Ramirez A.

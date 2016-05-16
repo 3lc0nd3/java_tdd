@@ -12,11 +12,11 @@ package co.com.elramireza.meetup.ejercicios;
 public class Util {
 
     public static void main(String[] args) {
-        int a = 20;
-        int b = 10;
+        int a = 25;
+        int b = 5;
         System.out.println("( "+a+" % "+b+" ) = " + (a % b));
 
-//        System.out.println("MinimoCD.mcd( "+a+","+b+" ) = " + MinimoCD.mcd(a, b));
+        System.out.println("MinimoCD.mcd( "+a+","+b+" ) = " + MaximoCD.mcd(a, b));
 
     }
 }
