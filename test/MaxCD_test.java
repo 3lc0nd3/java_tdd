@@ -16,16 +16,16 @@ import static org.hamcrest.CoreMatchers.is;
 public class MaxCD_test {
     @Test
     public void maximoCDde8y12es4(){
-        assertThat(MaximoCD.mcd(12, 8), is(4));
+        assertThat(MaximoCD.maximoCD(12, 8), is(4));
     }
 
     @Test
     public void maximoCDDe25y30es5(){
-        assertThat(MaximoCD.mcd(25, 30), is(5));
+        assertThat(MaximoCD.maximoCD(25, 30), is(5));
     }
 
     @Test
     public void minimocmDe25y30es5(){
-        assertThat(MaximoCD.mcd(25, 30), is(5));
+        assertThat(MaximoCD.maximoCD(25, 30), is(5));
     }
 }

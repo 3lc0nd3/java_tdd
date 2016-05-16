@@ -11,15 +11,27 @@ package co.com.elramireza.meetup.ejercicios;
  */
 public class MaximoCD {
 
-    public static int mcd(int a, int b){
+    /**
+     * Maximo comun divisor
+     * @param a
+     * @param b
+     * @return
+     */
+    public static int maximoCD(int a, int b){
         if (b == 0){
             return a;
         } else {
-            return mcd(b, a % b);
+            return maximoCD(b, a % b);
         }
     }
 
-    public static int mcm(int a, int b){
-        return a * b / mcd(a, b);
+    /**
+     * minimo comun multiplo
+     * @param a
+     * @param b
+     * @return
+     */
+    public static int minimoCM(int a, int b){
+        return a * b / maximoCD(a, b);
     }
 }

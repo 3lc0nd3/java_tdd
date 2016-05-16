@@ -23,20 +23,15 @@ public class Fraccion {
         if(denominador < 0){
             throw new IllegalArgumentException("Negativo");
         }
-        int mcd = MaximoCD.mcd(numerador, denominador);
+        int mcd = MaximoCD.maximoCD(numerador, denominador);
         this.numerador = numerador / mcd;
         this.denominador = denominador / mcd;
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
         Fraccion fraccion = (Fraccion) o;
-
-        if (numerador != fraccion.numerador) return false;
-        return denominador == fraccion.denominador;
+        return numerador == fraccion.numerador && denominador == fraccion.denominador;
 
     }
 
@@ -53,7 +48,14 @@ public class Fraccion {
                 "/" + denominador;
     }
 
-    public Fraccion sumar(Fraccion unMedio) {
-        return new Fraccion(1, 1);
+    public Fraccion sumar(Fraccion fraccion2Sumando) {
+        int minimoCM = MaximoCD.minimoCM(denominador, fraccion2Sumando.denominador);
+        ;
+        return new Fraccion(
+                ((minimoCM/denominador)*numerador) +
+                        ((minimoCM/fraccion2Sumando.denominador)*fraccion2Sumando.numerador)
+                ,
+                minimoCM
+                );
     }
 }

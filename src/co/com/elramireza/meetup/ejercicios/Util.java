@@ -16,7 +16,10 @@ public class Util {
         int b = 5;
         System.out.println("( "+a+" % "+b+" ) = " + (a % b));
 
-        System.out.println("MinimoCD.mcd( "+a+","+b+" ) = " + MaximoCD.mcd(a, b));
+        System.out.println("MinimoCD.maximoCD( "+a+","+b+" ) = " + MaximoCD.maximoCD(a, b));
+
+        Fraccion unTercio = new Fraccion(1, 3);
+        System.out.println("unTercio.sumar(unTercio) = " + unTercio.sumar(unTercio));
 
     }
 }
